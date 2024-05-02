@@ -3168,7 +3168,7 @@ input[type="button"].btn-block {
     .navbar-expand-sm > .container-fluid, .navbar-expand-sm > .container-sm, .navbar-expand-sm > .container-md, .navbar-expand-sm > .container-lg, .navbar-expand-sm > .container-xl {
       flex-wrap: nowrap; }
     .navbar-expand-sm .navbar-collapse {
-      display: fixed !important;
+      display: flex !important;
       flex-basis: auto; }
     .navbar-expand-sm .navbar-toggler {
       display: none; } }
