@@ -866,25 +866,27 @@
         <div class="col-lg-6 contact-right" >
 		<h5>Contact us</5>
 		<br>
-          <form action="https://sendmail.w3layouts.com/submitForm" method="post" class="signin-form">
+          <form action="forms/contact.php" role="form" method="post" class="php-email-form">
             <div class="input-grids">
               <div class="form-group">
 			  <br>
-                <input type="text" name="w3lName" id="w3lName" placeholder="Your Name*" class="contact-input" />
+               <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
               </div>
               <div class="form-group">
-                <input type="email" name="w3lSender" id="w3lSender" placeholder="Your Email*" class="contact-input" required="" />
+                    <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" data-rule="email" data-msg="Please enter a valid email" />
+                  <div class="validate"></div>
               </div>
               <div class="form-group">
-                <input type="text" name="w3lSubect" id="w3lSubect" placeholder="Subject*" class="contact-input" />
+                 <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />
+                <div class="validate"></div>
               </div>
             </div>
             <div class="form-group">
-              <textarea name="w3lMessage" id="w3lMessage" placeholder="Type your message here*" required=""></textarea>
+              <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />
+                <div class="validate"></div>
             </div>
             <div class="text-right">
-              <button class="btn btn-primary theme-button" style="object-align: center; margin-bottom: 20px">Send Message</button>
-			  
+              <button class="btn btn-primary theme-button" style="object-align: center; margin-bottom: 20px"  type="submit">Send Message</button>
             </div>
           </form>
         </div>
